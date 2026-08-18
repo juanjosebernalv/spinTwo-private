@@ -1,0 +1,96 @@
+@reference "../../app/globals.css";
+
+/* ── Main dark section ────────────────────────────── */
+.darkSection {
+  @apply bg-[#1B2533] px-6 py-14 text-white;
+}
+.darkGrid {
+  @apply mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-4;
+}
+
+/* ── Logo + socials column ────────────────────────── */
+.brandColumn {
+  @apply flex flex-col gap-8;
+}
+.logoImage {
+  @apply object-contain;
+}
+.socialsRow {
+  @apply flex gap-6;
+}
+.socialLink {
+  @apply flex flex-col items-center gap-1 text-white/70 transition-colors hover:text-white;
+}
+.socialLabel {
+  @apply text-xs;
+}
+
+/* ── Nav column ───────────────────────────────────── */
+.columnHeading {
+  @apply mb-4 font-semibold;
+}
+.linkList {
+  @apply flex flex-col gap-3 text-sm text-white/70;
+}
+.footerLink {
+  @apply inline-flex items-center gap-0.5 transition-colors hover:text-white;
+}
+
+/* ── Newsletter column ────────────────────────────── */
+.newsletterDesc {
+  @apply mb-4 text-sm leading-relaxed text-white/70;
+}
+.emailInput {
+  @apply mb-2 w-full bg-white px-4 py-2 text-sm text-gray-800 outline-none placeholder:text-gray-400;
+}
+.subscribeButton {
+  @apply w-full bg-red-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-red-700;
+}
+
+/* ── Bottom bar ───────────────────────────────────── */
+.bottomBar {
+  @apply bg-white px-6 py-8;
+}
+.bottomInner {
+  @apply mx-auto flex max-w-6xl flex-col gap-6 md:flex-row md:items-start;
+}
+.addressBlock {
+  @apply flex-1;
+}
+.companyName {
+  @apply font-logo font-bold text-gray-900;
+}
+.addressLine {
+  @apply mt-2 text-sm text-gray-600;
+}
+.addressLinePlain {
+  @apply text-sm text-gray-600;
+}
+.contactBlock {
+  @apply border-gray-300 md:border-l md:pl-8;
+}
+.contactLine {
+  @apply text-sm text-gray-600;
+}
+
+/* ── Copyright row ────────────────────────────────── */
+.copyrightRow {
+  @apply mx-auto mt-6 flex max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-1 border-t border-gray-200 pt-4 text-xs text-gray-500;
+}
+.copyrightLink {
+  @apply hover:underline;
+}
+
+/* ── SpinTwo inline brand ─────────────────────────── */
+.spinTwoBase {
+  @apply font-logo;
+}
+.spinTwoSuffix {
+  @apply text-red-500;
+}
+.spinTwoWhite {
+  @apply font-semibold text-white;
+}
+.spinTwoGray {
+  @apply font-semibold text-gray-800;
+}

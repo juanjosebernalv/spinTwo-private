@@ -1,0 +1,88 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animation ─────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply bg-white px-6 py-20;
+}
+.container {
+  @apply mx-auto max-w-4xl;
+}
+
+/* ── Section header ───────────────────────────────── */
+.sectionHeader {
+  @apply mb-8 text-center;
+}
+.eyebrow {
+  @apply mb-3 text-xs font-bold uppercase tracking-widest text-red-600;
+}
+.sectionTitle {
+  @apply text-3xl font-bold text-gray-900 sm:text-4xl;
+}
+.sectionSubText {
+  @apply mx-auto mt-4 max-w-2xl font-logo text-sm leading-relaxed text-gray-500;
+}
+
+/* ── SpinTwo inline brand ─────────────────────────── */
+.spinTwoBase {
+  @apply font-logo font-bold;
+}
+.spinTwoPrefix {
+  @apply text-[#1B2533];
+}
+.spinTwoSuffix {
+  @apply text-red-600;
+}
+.spinTwoSm {
+  @apply text-sm;
+}
+
+/* ── YouTube embed wrapper ────────────────────────── */
+.embedWrapper {
+  @apply relative aspect-video w-full overflow-hidden rounded-2xl bg-black shadow-xl;
+}
+
+/* ── Iframe ───────────────────────────────────────── */
+.iframe {
+  @apply absolute inset-0 h-full w-full;
+}
+
+/* ── Thumbnail image ──────────────────────────────── */
+.thumbnail {
+  @apply object-cover;
+}
+
+/* ── Overlay ──────────────────────────────────────── */
+.overlay {
+  @apply absolute inset-0 bg-black/20;
+}
+
+/* ── Play button container ────────────────────────── */
+.playButtonContainer {
+  @apply absolute inset-0 flex items-center justify-center;
+}
+
+/* ── Play button ──────────────────────────────────── */
+.playButton {
+  @apply flex h-16 w-16 items-center justify-center rounded-full bg-red-600 shadow-lg transition-transform duration-200;
+}
+.playButton:hover {
+  @apply scale-110;
+}
+
+/* ── Play icon SVG ────────────────────────────────── */
+.playIcon {
+  @apply h-7 w-7 translate-x-0.5 fill-white;
+}

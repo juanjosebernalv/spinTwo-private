@@ -1,0 +1,99 @@
+@reference "../../app/globals.css";
+
+/* ── Active underline animation ───────────────────── */
+.activeUnderline {
+  @apply absolute bottom-0 left-3 right-3 h-[2px] origin-left bg-red-500;
+  animation: nav-slide-in 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ── Nav root ─────────────────────────────────────── */
+.nav {
+  @apply relative w-full;
+}
+
+/* ── Mobile burger button ─────────────────────────── */
+.mobileBurger {
+  @apply inline-flex h-9 w-9 items-center justify-center text-white md:hidden;
+}
+
+/* ── Desktop list ─────────────────────────────────── */
+.desktopList {
+  @apply hidden items-stretch gap-0 md:flex;
+}
+
+/* ── Desktop nav item — shared link/button styles ─── */
+.navLink {
+  @apply relative inline-flex items-center gap-0.5 px-3 py-5 text-sm font-medium transition-colors duration-200 hover:text-white;
+}
+.navLinkActive {
+  @apply text-red-500;
+}
+.navLinkInactive {
+  @apply text-white/70;
+}
+
+/* ── Dropdown chevron ─────────────────────────────── */
+.chevron {
+  @apply transition-transform duration-300;
+}
+.chevronOpen {
+  @apply rotate-180;
+}
+
+/* ── Dropdown panel ───────────────────────────────── */
+.dropdownPanel {
+  @apply absolute top-full left-0 z-50 min-w-[260px] bg-white py-3 shadow-xl;
+}
+.dropdownItem {
+  @apply block px-6 py-3 text-sm font-bold transition-colors hover:bg-gray-50;
+}
+.dropdownItemPrefix {
+  @apply text-gray-900;
+}
+.dropdownItemSuffix {
+  @apply text-red-600;
+}
+.dropdownPlainItem {
+  @apply flex items-center gap-2.5 px-6 py-3 text-sm font-bold text-gray-900 transition-colors hover:bg-gray-50;
+}
+
+/* ── Mobile menu panel ────────────────────────────── */
+.mobileMenu {
+  @apply absolute top-12 right-0 z-50 flex w-64 flex-col gap-1 rounded-xl border border-white/10 bg-[#1B2533] p-2 shadow-lg md:hidden;
+}
+.mobileItem {
+  @apply flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm transition-colors hover:bg-white/10;
+}
+.mobileItemActive {
+  @apply text-red-400;
+}
+.mobileItemInactive {
+  @apply text-white/70;
+}
+.mobileCtaDivider {
+  @apply mt-2 border-t border-white/10 pt-2;
+}
+.mobileCtaLink {
+  @apply flex w-full items-center justify-center rounded-lg bg-red-600 px-3 py-2 text-sm font-semibold text-white hover:bg-red-700;
+}
+
+/* ── ThinLinc brand icon ──────────────────────────── */
+.thinLincIconWrapper {
+  @apply inline-flex items-center gap-1.5 shrink-0;
+}
+.thinLincBadge {
+  @apply rounded bg-gray-900 px-1.5 py-0.5 text-[9px] font-bold tracking-widest text-white;
+}
+
+/* ── Inline SVG icons ─────────────────────────────── */
+.thinLincSvg {
+  @apply h-4 w-4 shrink-0;
+}
+.openOnDemandSvg {
+  @apply h-5 w-5 text-red-600;
+}
+
+/* ── Desktop dropdown list item ───────────────────── */
+.dropdownListItem {
+  @apply relative;
+}

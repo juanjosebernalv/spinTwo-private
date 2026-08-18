@@ -1,0 +1,349 @@
+{
+  "common": {
+    "siteName": "SpinTwo",
+    "skipToContent": "Skip to content",
+    "nav": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "services": "Services",
+      "products": "Products",
+      "caseStudies": "Case Studies",
+      "industries": "Industries",
+      "resources": "Resources",
+      "contactUs": "Contact Us",
+      "clientSupport": "Client Support",
+      "phone": "+1 (346) 327-7867"
+    },
+    "nav_aria": {
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "primaryNavigation": "Primary navigation"
+    },
+    "cta": {
+      "primary": "Get Started",
+      "secondary": "Learn More",
+      "contact": "Contact Us",
+      "viewAll": "View All"
+    },
+    "footer": {
+      "tagline": "Enabling Scientific Computing",
+      "company": "Company",
+      "legal": "Legal",
+      "termsConditions": "Terms & Conditions",
+      "privacyPolicy": "Privacy Policy",
+      "rights": "All Rights Reserved.",
+      "stayInLoop": "Stay in the loop",
+      "stayInLoopDesc": "Get the latest HPC insights, updates, and events from",
+      "emailPlaceholder": "Email",
+      "subscribe": "Subscribe",
+      "llc": "LLC",
+      "address1": "1000 Main Street, Suite 2300 PMP1053",
+      "address2": "Houston, TX 77002",
+      "phone": "+1 (346)-327-7867",
+      "contactEmail": "contact@spintwo.com",
+      "copyright": "Copyright.",
+      "copyrightYear": "2026"
+    },
+    "cta": {
+      "title": "Ready to see what your infrastructure can really do?",
+      "subtitle": "Start with a free assessment. We will analyze your environment, identify what is costing you performance, and tell you honestly whether spinUp, spinBuild, or something else is the right next step.",
+      "scheduleButton": "SCHEDULE FREE ASSESSMENT",
+      "downloadButton": "DOWNLOAD SPINUP ONE-PAGER"
+    },
+    "themeToggle": {
+      "label": "Toggle theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "languageToggle": {
+      "label": "Select language",
+      "en": "English",
+      "es": "Español"
+    }
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "SpinTwo | Digital Solutions for Modern Business",
+        "description": "SpinTwo helps companies design, build and scale modern, high-performing digital products."
+      },
+      "hero": {
+        "title": "We build the infrastructure that moves science forward",
+        "subtitle": "From genomics analysis completed in weeks instead of years to simulations running in hours instead of days, we diagnose your computational challenge first, then build the infrastructure to solve it.",
+        "ctaPrimary": "REQUEST A FREE INFRASTRUCTURE ASSESSMENT",
+        "ctaSecondary": "SEE HOW WE CUT A 7-YEAR ANALYSIS TO WEEKS"
+      },
+      "highlights": {
+        "title": "Why Companies Choose SpinTwo",
+        "items": [
+          {
+            "title": "Scalable Architecture",
+            "description": "We build systems designed to grow with your business, from launch to enterprise scale."
+          },
+          {
+            "title": "Performance First",
+            "description": "Every product we ship is optimized for speed, accessibility, and reliability."
+          },
+          {
+            "title": "Dedicated Partnership",
+            "description": "We work as an extension of your team, with clear communication at every step."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to start your next project?",
+        "subtitle": "Let's talk about how SpinTwo can help you reach your goals.",
+        "buttonLabel": "Contact Us"
+      }
+    },
+    "aboutUs": {
+      "meta": {
+        "title": "About Us | SpinTwo",
+        "description": "Learn about SpinTwo's mission, values, and the team behind our digital products."
+      },
+      "hero": {
+        "eyebrow": "About Us",
+        "title": "The Team Behind SpinTwo",
+        "subtitle": "We are a team of specialists dedicated to delivering high-quality digital products for businesses of all sizes.",
+        "ctaPrimary": "Meet the Team",
+        "ctaSecondary": "Our Values"
+      },
+      "mission": {
+        "title": "Our Mission",
+        "body": "To help businesses of every size build digital products that are fast, accessible, and built to last."
+      },
+      "values": {
+        "title": "Our Values",
+        "items": [
+          {
+            "title": "Craftsmanship",
+            "description": "We take pride in the quality of every line of code we ship."
+          },
+          {
+            "title": "Transparency",
+            "description": "We believe in clear, honest communication throughout every project."
+          },
+          {
+            "title": "Impact",
+            "description": "We measure success by the outcomes we deliver for our clients."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Want to work with us?",
+        "subtitle": "We would love to hear about your project.",
+        "buttonLabel": "Get in Touch"
+      }
+    },
+    "services": {
+      "meta": {
+        "title": "Services | SpinTwo",
+        "description": "Explore the digital services offered by SpinTwo, from product design to full-stack engineering."
+      },
+      "hero": {
+        "eyebrow": "Services",
+        "title": "Full-Cycle Digital Services",
+        "subtitle": "From strategy and design to engineering and deployment, we cover every stage of your product journey.",
+        "ctaPrimary": "View Services",
+        "ctaSecondary": "Contact Us"
+      },
+      "list": {
+        "title": "What We Offer",
+        "items": [
+          {
+            "title": "Product Strategy",
+            "description": "We help define the roadmap for your digital product from concept to launch."
+          },
+          {
+            "title": "UI/UX Design",
+            "description": "User-centered design that balances usability with brand identity."
+          },
+          {
+            "title": "Web Development",
+            "description": "Modern, responsive, and performant web applications built with React and Next.js."
+          },
+          {
+            "title": "Quality Assurance",
+            "description": "Comprehensive testing to ensure a reliable, bug-free product."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Need help choosing the right service?",
+        "subtitle": "Talk to our team about the best approach for your project.",
+        "buttonLabel": "Talk to Us"
+      }
+    },
+    "products": {
+      "meta": {
+        "title": "Products | SpinTwo",
+        "description": "Discover the products and platforms built by SpinTwo for our clients and partners."
+      },
+      "hero": {
+        "eyebrow": "Products",
+        "title": "Products Built to Perform",
+        "subtitle": "Explore the digital products we have designed and engineered for our clients.",
+        "ctaPrimary": "View Products",
+        "ctaSecondary": "Request a Demo"
+      },
+      "list": {
+        "title": "Featured Products",
+        "items": [
+          {
+            "title": "SpinTwo Analytics",
+            "description": "Real-time analytics dashboard for business performance tracking."
+          },
+          {
+            "title": "SpinTwo Commerce",
+            "description": "A flexible e-commerce platform built for scale."
+          },
+          {
+            "title": "SpinTwo Connect",
+            "description": "A unified communication platform for distributed teams."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Interested in a product demo?",
+        "subtitle": "Schedule a walkthrough with our product team.",
+        "buttonLabel": "Request a Demo"
+      }
+    },
+    "caseStudies": {
+      "meta": {
+        "title": "Case Studies | SpinTwo",
+        "description": "Real results from real clients. Explore SpinTwo's case studies across industries."
+      },
+      "hero": {
+        "eyebrow": "Case Studies",
+        "title": "Real Results, Real Impact",
+        "subtitle": "See how we have helped companies across industries achieve measurable growth.",
+        "ctaPrimary": "Explore Case Studies",
+        "ctaSecondary": "Contact Us"
+      },
+      "list": {
+        "title": "Featured Case Studies",
+        "items": [
+          {
+            "title": "Retail Platform Modernization",
+            "description": "How we helped a national retailer increase online conversion by 38%."
+          },
+          {
+            "title": "Fintech Onboarding Redesign",
+            "description": "Reducing onboarding time by 60% for a fast-growing fintech client."
+          },
+          {
+            "title": "Healthcare Portal Rebuild",
+            "description": "A full-scale rebuild that improved patient portal satisfaction scores."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Want results like these?",
+        "subtitle": "Let's discuss how we can help you achieve similar outcomes.",
+        "buttonLabel": "Start a Project"
+      }
+    },
+    "industries": {
+      "meta": {
+        "title": "Industries | SpinTwo",
+        "description": "SpinTwo delivers tailored digital solutions across a wide range of industries."
+      },
+      "hero": {
+        "eyebrow": "Industries",
+        "title": "Industry Expertise That Delivers",
+        "subtitle": "We bring deep domain knowledge to every industry we serve.",
+        "ctaPrimary": "Explore Industries",
+        "ctaSecondary": "Contact Us"
+      },
+      "list": {
+        "title": "Industries We Serve",
+        "items": [
+          {
+            "title": "Retail & E-commerce",
+            "description": "Digital storefronts and platforms built to convert."
+          },
+          {
+            "title": "Financial Services",
+            "description": "Secure, compliant, and user-friendly financial products."
+          },
+          {
+            "title": "Healthcare",
+            "description": "Patient-centered digital experiences that meet compliance needs."
+          },
+          {
+            "title": "Technology",
+            "description": "Scalable platforms for fast-growing technology companies."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Don't see your industry?",
+        "subtitle": "We adapt our expertise to fit your specific business needs.",
+        "buttonLabel": "Talk to an Expert"
+      }
+    },
+    "resources": {
+      "meta": {
+        "title": "Resources | SpinTwo",
+        "description": "Guides, articles, and insights from the SpinTwo team."
+      },
+      "hero": {
+        "eyebrow": "Resources",
+        "title": "Insights & Resources",
+        "subtitle": "Guides, articles, and best practices from our team of specialists.",
+        "ctaPrimary": "Browse Resources",
+        "ctaSecondary": "Subscribe"
+      },
+      "list": {
+        "title": "Latest Resources",
+        "items": [
+          {
+            "title": "The Complete Guide to Web Performance",
+            "description": "Practical strategies to speed up your web application."
+          },
+          {
+            "title": "Designing for Accessibility",
+            "description": "Best practices for building inclusive digital products."
+          },
+          {
+            "title": "Choosing the Right Tech Stack",
+            "description": "A framework for evaluating technology decisions in 2026."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Want more insights like this?",
+        "subtitle": "Subscribe to our newsletter for the latest updates.",
+        "buttonLabel": "Subscribe"
+      }
+    },
+    "contactUs": {
+      "meta": {
+        "title": "Contact Us | SpinTwo",
+        "description": "Get in touch with the SpinTwo team to discuss your next project."
+      },
+      "hero": {
+        "eyebrow": "Contact Us",
+        "title": "Let's Build Something Together",
+        "subtitle": "Tell us about your project and we will get back to you within one business day.",
+        "ctaPrimary": "Send a Message",
+        "ctaSecondary": "View Services"
+      },
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "company": "Company",
+        "message": "Message",
+        "submit": "Send Message",
+        "namePlaceholder": "Jane Doe",
+        "emailPlaceholder": "jane@company.com",
+        "companyPlaceholder": "Your company name",
+        "messagePlaceholder": "Tell us about your project...",
+        "successMessage": "Thank you! Your message has been sent.",
+        "errorMessage": "Something went wrong. Please try again."
+      }
+    }
+  }
+}

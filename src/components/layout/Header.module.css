@@ -1,0 +1,55 @@
+@reference "../../app/globals.css";
+
+/* ── Header element ───────────────────────────────── */
+.header {
+  @apply sticky top-0 z-30 bg-[#1B2533];
+}
+
+/* ── Inner container ──────────────────────────────── */
+.inner {
+  @apply mx-auto flex max-w-7xl items-center gap-8 px-6 py-4;
+}
+
+/* ── Logo link ────────────────────────────────────── */
+.logoLink {
+  @apply shrink-0;
+}
+.logoImage {
+  @apply object-contain;
+  height: auto;
+}
+
+/* ── Nav wrapper (grows to fill) ──────────────────── */
+.navWrapper {
+  @apply flex flex-1 items-center justify-between;
+}
+
+/* ── Right actions ────────────────────────────────── */
+.rightActions {
+  @apply hidden items-center gap-4 md:flex;
+}
+
+/* ── Support link group ───────────────────────────── */
+.supportGroup {
+  @apply flex flex-col items-start gap-1;
+}
+
+/* ── Support link ─────────────────────────────────── */
+.supportLink {
+  @apply inline-flex items-center gap-1 whitespace-nowrap rounded border border-white/40 px-3 py-1 text-xs font-medium text-white transition-colors hover:border-white hover:bg-white/10;
+}
+
+/* ── Phone text ───────────────────────────────────── */
+.phone {
+  @apply whitespace-nowrap text-xs text-white/60;
+}
+
+/* ── Contact Us CTA ───────────────────────────────── */
+.contactCta {
+  @apply whitespace-nowrap bg-red-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-red-700;
+}
+
+/* ── Arrow icon SVG ───────────────────────────────── */
+.arrowIcon {
+  @apply h-3 w-3;
+}

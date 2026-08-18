@@ -1,0 +1,90 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animation ─────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay1 { transition-delay: 100ms; }
+.delay2 { transition-delay: 200ms; }
+
+/* ── Glow border ──────────────────────────────────── */
+.glowBorder {
+  @apply flex flex-1 rounded-2xl p-px transition-shadow duration-300;
+  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.55), #d1d5db 60%);
+}
+.glowBorder:hover {
+  @apply shadow-[0_0_32px_rgba(220,38,38,0.12)];
+}
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply bg-[#EEF2F6] px-6 py-20;
+}
+.container {
+  @apply mx-auto max-w-6xl;
+}
+
+/* ── Section header ───────────────────────────────── */
+.sectionHeader {
+  @apply mb-12 text-center;
+}
+.eyebrow {
+  @apply mb-3 text-xs font-bold uppercase tracking-widest text-red-600;
+}
+.sectionTitle {
+  @apply text-3xl font-bold text-gray-900 sm:text-4xl;
+}
+.sectionSubText {
+  @apply mx-auto mt-4 max-w-2xl font-logo text-sm leading-relaxed text-gray-500;
+}
+
+/* ── Steps row ────────────────────────────────────── */
+.stepsRow {
+  @apply flex flex-col gap-5 sm:flex-row;
+}
+
+/* ── Card wrapper ─────────────────────────────────── */
+.cardWrapper {
+  @apply flex flex-1;
+}
+
+/* ── Card inner ───────────────────────────────────── */
+.cardInner {
+  @apply flex flex-1 flex-col rounded-2xl bg-white p-6;
+}
+
+/* ── Card header row ──────────────────────────────── */
+.cardHeader {
+  @apply flex items-center gap-4;
+}
+
+/* ── Step number badge ────────────────────────────── */
+.stepNumber {
+  @apply flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white;
+}
+
+/* ── Step title ───────────────────────────────────── */
+.stepTitle {
+  @apply font-bold text-gray-900;
+}
+
+/* ── Step description ─────────────────────────────── */
+.stepDescription {
+  @apply mt-4 flex-1 font-logo text-sm leading-relaxed text-gray-500;
+}
+
+/* ── Badge row ────────────────────────────────────── */
+.badgeRow {
+  @apply mt-5;
+}
+.badge {
+  @apply inline-block rounded-full bg-red-50 px-4 py-1.5 font-logo text-xs font-semibold uppercase tracking-wider text-red-500;
+}

@@ -1,0 +1,56 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animation ─────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay1 { transition-delay: 100ms; }
+.delay2 { transition-delay: 200ms; }
+.delay3 { transition-delay: 300ms; }
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply bg-[#1B2533];
+}
+.container {
+  @apply mx-auto max-w-6xl px-6;
+}
+.statsGrid {
+  @apply grid grid-cols-2 sm:grid-cols-4;
+}
+
+/* ── Stat item ────────────────────────────────────── */
+.statItem {
+  @apply cursor-default border-white/25 p-6 sm:p-8;
+}
+
+/* ── Hover scale wrapper ──────────────────────────── */
+.statInner {
+  transition: transform 0.3s ease-out;
+}
+.statItem:hover .statInner {
+  transform: scale(1.04);
+}
+
+/* ── Stat value ───────────────────────────────────── */
+.statValue {
+  @apply text-4xl font-bold text-white sm:text-5xl;
+}
+
+/* ── Stat label ───────────────────────────────────── */
+.statLabel {
+  @apply mt-3 font-logo text-sm font-bold text-white;
+}
+
+/* ── Stat description ─────────────────────────────── */
+.statDescription {
+  @apply mt-1 font-logo text-sm text-white/55;
+}

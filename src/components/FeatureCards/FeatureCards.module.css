@@ -1,0 +1,64 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animation ─────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition-property: opacity, transform;
+  transition-duration: 0.55s;
+  transition-timing-function: ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay1 { transition-delay: 90ms; }
+.delay2 { transition-delay: 180ms; }
+.delay3 { transition-delay: 270ms; }
+
+/* ── Card wrapper ─────────────────────────────────── */
+.cardWrapper {
+  @apply h-full;
+}
+
+/* ── Glow border ──────────────────────────────────── */
+.glowBorder {
+  @apply relative h-full rounded-2xl p-px transition-shadow duration-300;
+  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.55), #d1d5db 60%);
+}
+.glowBorder:hover {
+  @apply shadow-[0_0_32px_rgba(220,38,38,0.15)];
+}
+
+/* ── Card inner ───────────────────────────────────── */
+.cardInner {
+  @apply flex h-full flex-col rounded-2xl bg-white p-6;
+}
+
+/* ── Card header row ──────────────────────────────── */
+.cardHeader {
+  @apply flex items-center gap-4;
+}
+
+/* ── Icon container ───────────────────────────────── */
+.iconContainer {
+  @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-red-600;
+}
+
+/* ── Card title ───────────────────────────────────── */
+.cardTitle {
+  @apply text-base font-bold text-gray-900;
+}
+
+/* ── Card description ─────────────────────────────── */
+.cardDescription {
+  @apply mt-4 font-logo text-sm leading-relaxed text-gray-500;
+}
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply bg-gray-50 px-6 py-16;
+}
+.grid {
+  @apply mx-auto grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4;
+}

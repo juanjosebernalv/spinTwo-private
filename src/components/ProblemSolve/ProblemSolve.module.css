@@ -1,0 +1,125 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animations ────────────────────────────── */
+.revealY {
+  opacity: 0;
+  transform: translateY(24px);
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.revealY.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.revealXLeft {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+.revealXLeft.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.delay1 { transition-delay: 100ms; }
+.delay2 { transition-delay: 200ms; }
+
+/* ── Glow border ──────────────────────────────────── */
+.glowBorder {
+  @apply flex flex-1 rounded-2xl p-px transition-shadow duration-300;
+  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.55), #d1d5db 60%);
+}
+.glowBorder:hover {
+  @apply shadow-[0_0_32px_rgba(220,38,38,0.12)];
+}
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply bg-[#EEF2F6] px-6 py-20;
+}
+.grid {
+  @apply mx-auto grid max-w-6xl items-stretch gap-12 lg:grid-cols-2;
+}
+
+/* ── Image column ─────────────────────────────────── */
+.imageWrapper {
+  @apply relative min-h-[340px];
+}
+.image {
+  @apply rounded-2xl object-cover shadow-lg;
+}
+
+/* ── Content column ───────────────────────────────── */
+.contentColumn {
+  @apply flex flex-col gap-5;
+}
+
+/* ── Eyebrow ──────────────────────────────────────── */
+.eyebrow {
+  @apply text-xs font-bold uppercase tracking-widest text-red-600;
+}
+
+/* ── Section title ────────────────────────────────── */
+.sectionTitle {
+  @apply text-3xl font-bold leading-tight text-gray-900 sm:text-4xl;
+}
+
+/* ── Body text ────────────────────────────────────── */
+.bodyText {
+  @apply font-logo text-sm leading-relaxed text-gray-600;
+}
+.bodyTextStrong {
+  @apply mt-3 font-bold text-gray-800;
+}
+
+/* ── Cards list ───────────────────────────────────── */
+.cardsList {
+  @apply flex flex-1 flex-col gap-4;
+}
+
+/* ── Card wrapper ─────────────────────────────────── */
+.cardWrapper {
+  @apply flex flex-1;
+}
+
+/* ── Card inner ───────────────────────────────────── */
+.cardInner {
+  @apply flex flex-1 items-center gap-4 rounded-2xl bg-white p-5;
+}
+
+/* ── Icon container — bad (red) ───────────────────── */
+.iconBad {
+  @apply flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-100;
+}
+.iconColorBad {
+  @apply text-red-500;
+}
+
+/* ── Icon container — good (blue) ────────────────── */
+.iconGood {
+  @apply flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-100;
+}
+.iconColorGood {
+  @apply text-blue-500;
+}
+
+/* ── Card text ────────────────────────────────────── */
+.cardTitle {
+  @apply font-bold text-gray-900;
+}
+.cardDescription {
+  @apply mt-1 font-logo text-sm leading-relaxed text-gray-500;
+}
+
+/* ── SpinTwo inline brand ─────────────────────────── */
+.spinTwoBase {
+  @apply font-logo font-bold;
+}
+.spinTwoPrefix {
+  @apply text-gray-900;
+}
+.spinTwoSuffix {
+  @apply text-red-600;
+}

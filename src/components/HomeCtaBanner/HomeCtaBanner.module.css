@@ -1,0 +1,42 @@
+@reference "../../app/globals.css";
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply bg-red-600 px-6 py-20 text-center text-white;
+}
+.container {
+  @apply relative mx-auto max-w-3xl;
+}
+
+/* ── Heading ──────────────────────────────────────── */
+.heading {
+  @apply text-3xl font-bold leading-tight sm:text-4xl;
+}
+
+/* ── Body text ────────────────────────────────────── */
+.body {
+  @apply mx-auto mt-5 max-w-2xl font-logo text-sm leading-relaxed text-white/90;
+}
+
+/* ── ProductName inline ───────────────────────────── */
+.productNameBase {
+  @apply font-logo font-bold;
+}
+.productNameSuffix {
+  @apply font-logo font-bold italic;
+}
+
+/* ── CTA row ──────────────────────────────────────── */
+.ctaRow {
+  @apply mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row;
+}
+
+/* ── Primary CTA ──────────────────────────────────── */
+.ctaPrimary {
+  @apply border-2 border-white bg-white px-7 py-3.5 text-xs font-bold uppercase tracking-widest text-red-600 transition-colors hover:bg-red-50;
+}
+
+/* ── Secondary CTA ────────────────────────────────── */
+.ctaSecondary {
+  @apply border-2 border-white px-7 py-3.5 text-xs font-bold uppercase tracking-widest text-white transition-colors hover:bg-white/10;
+}

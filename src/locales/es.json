@@ -1,0 +1,350 @@
+{
+  "common": {
+    "siteName": "SpinTwo",
+    "skipToContent": "Saltar al contenido",
+    "nav": {
+      "home": "Inicio",
+      "aboutUs": "Nosotros",
+      "services": "Servicios",
+      "products": "Productos",
+      "caseStudies": "Casos de Éxito",
+      "industries": "Industrias",
+      "resources": "Recursos",
+      "contactUs": "Contáctenos",
+      "clientSupport": "Soporte al Cliente",
+      "phone": "+1 (346) 327-7867"
+    },
+    "nav_aria": {
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "primaryNavigation": "Navegación principal"
+    },
+    "cta": {
+      "primary": "Comenzar",
+      "secondary": "Saber Más",
+      "contact": "Contáctenos",
+      "viewAll": "Ver Todo"
+    },
+    "footer": {
+      "tagline": "Habilitando la Computación Científica",
+      "company": "Empresa",
+      "legal": "Legal",
+      "termsConditions": "Términos y Condiciones",
+      "privacyPolicy": "Política de Privacidad",
+      "rights": "Todos los Derechos Reservados.",
+      "stayInLoop": "Mantente informado",
+      "stayInLoopDesc": "Recibe los últimos insights de HPC, actualizaciones y eventos de",
+      "emailPlaceholder": "Correo electrónico",
+      "subscribe": "Suscribirse",
+      "llc": "LLC",
+      "address1": "1000 Main Street, Suite 2300 PMP1053",
+      "address2": "Houston, TX 77002",
+      "phone": "+1 (346)-327-7867",
+      "contactEmail": "contact@spintwo.com",
+      "copyright": "Copyright.",
+      "copyrightYear": "2026"
+    },
+    "cta": {
+      "title": "¿Listo para ver lo que tu infraestructura puede hacer?",
+      "subtitle": "Comienza con una evaluación gratuita. Analizaremos tu entorno, identificaremos qué está afectando tu rendimiento y te diremos honestamente si spinUp, spinBuild, o algo más es el próximo paso correcto.",
+      "scheduleButton": "AGENDAR EVALUACIÓN GRATUITA",
+      "downloadButton": "DESCARGAR SPINUP ONE-PAGER"
+    },
+    "themeToggle": {
+      "label": "Cambiar tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "languageToggle": {
+      "label": "Seleccionar idioma",
+      "en": "English",
+      "es": "Español"
+    }
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "SpinTwo | Soluciones Digitales para Negocios Modernos",
+        "description": "SpinTwo ayuda a las empresas a diseñar, construir y escalar productos digitales modernos y de alto rendimiento."
+      },
+      "hero": {
+        "eyebrow": "Bienvenido a SpinTwo",
+        "title": "Construyendo el Futuro del Negocio Digital",
+        "subtitle": "Ayudamos a las empresas a diseñar, construir y escalar experiencias web modernas que generan resultados reales.",
+        "ctaPrimary": "Comenzar",
+        "ctaSecondary": "Explorar Servicios"
+      },
+      "highlights": {
+        "title": "Por Qué las Empresas Eligen SpinTwo",
+        "items": [
+          {
+            "title": "Arquitectura Escalable",
+            "description": "Construimos sistemas diseñados para crecer con tu negocio, desde el lanzamiento hasta la escala empresarial."
+          },
+          {
+            "title": "Rendimiento Primero",
+            "description": "Cada producto que entregamos está optimizado para velocidad, accesibilidad y confiabilidad."
+          },
+          {
+            "title": "Alianza Dedicada",
+            "description": "Trabajamos como una extensión de tu equipo, con comunicación clara en cada paso."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para comenzar tu próximo proyecto?",
+        "subtitle": "Hablemos sobre cómo SpinTwo puede ayudarte a alcanzar tus objetivos.",
+        "buttonLabel": "Contáctenos"
+      }
+    },
+    "aboutUs": {
+      "meta": {
+        "title": "Nosotros | SpinTwo",
+        "description": "Conoce la misión, los valores y el equipo detrás de los productos digitales de SpinTwo."
+      },
+      "hero": {
+        "eyebrow": "Nosotros",
+        "title": "El Equipo Detrás de SpinTwo",
+        "subtitle": "Somos un equipo de especialistas dedicados a entregar productos digitales de alta calidad para empresas de todos los tamaños.",
+        "ctaPrimary": "Conoce al Equipo",
+        "ctaSecondary": "Nuestros Valores"
+      },
+      "mission": {
+        "title": "Nuestra Misión",
+        "body": "Ayudar a empresas de todos los tamaños a construir productos digitales rápidos, accesibles y duraderos."
+      },
+      "values": {
+        "title": "Nuestros Valores",
+        "items": [
+          {
+            "title": "Excelencia",
+            "description": "Nos enorgullecemos de la calidad de cada línea de código que entregamos."
+          },
+          {
+            "title": "Transparencia",
+            "description": "Creemos en una comunicación clara y honesta durante todo el proyecto."
+          },
+          {
+            "title": "Impacto",
+            "description": "Medimos el éxito por los resultados que entregamos a nuestros clientes."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Quieres trabajar con nosotros?",
+        "subtitle": "Nos encantaría conocer los detalles de tu proyecto.",
+        "buttonLabel": "Contáctanos"
+      }
+    },
+    "services": {
+      "meta": {
+        "title": "Servicios | SpinTwo",
+        "description": "Explora los servicios digitales que ofrece SpinTwo, desde diseño de producto hasta ingeniería full-stack."
+      },
+      "hero": {
+        "eyebrow": "Servicios",
+        "title": "Servicios Digitales de Ciclo Completo",
+        "subtitle": "Desde la estrategia y el diseño hasta la ingeniería y el despliegue, cubrimos cada etapa del recorrido de tu producto.",
+        "ctaPrimary": "Ver Servicios",
+        "ctaSecondary": "Contáctenos"
+      },
+      "list": {
+        "title": "Qué Ofrecemos",
+        "items": [
+          {
+            "title": "Estrategia de Producto",
+            "description": "Ayudamos a definir la hoja de ruta de tu producto digital desde el concepto hasta el lanzamiento."
+          },
+          {
+            "title": "Diseño UI/UX",
+            "description": "Diseño centrado en el usuario que equilibra usabilidad con identidad de marca."
+          },
+          {
+            "title": "Desarrollo Web",
+            "description": "Aplicaciones web modernas, responsivas y de alto rendimiento construidas con React y Next.js."
+          },
+          {
+            "title": "Control de Calidad",
+            "description": "Pruebas exhaustivas para garantizar un producto confiable y sin errores."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Necesitas ayuda para elegir el servicio adecuado?",
+        "subtitle": "Habla con nuestro equipo sobre el mejor enfoque para tu proyecto.",
+        "buttonLabel": "Hablar con Nosotros"
+      }
+    },
+    "products": {
+      "meta": {
+        "title": "Productos | SpinTwo",
+        "description": "Descubre los productos y plataformas construidos por SpinTwo para nuestros clientes y socios."
+      },
+      "hero": {
+        "eyebrow": "Productos",
+        "title": "Productos Construidos para Rendir",
+        "subtitle": "Explora los productos digitales que hemos diseñado y desarrollado para nuestros clientes.",
+        "ctaPrimary": "Ver Productos",
+        "ctaSecondary": "Solicitar una Demo"
+      },
+      "list": {
+        "title": "Productos Destacados",
+        "items": [
+          {
+            "title": "SpinTwo Analytics",
+            "description": "Panel de análisis en tiempo real para el seguimiento del rendimiento empresarial."
+          },
+          {
+            "title": "SpinTwo Commerce",
+            "description": "Una plataforma de comercio electrónico flexible construida para escalar."
+          },
+          {
+            "title": "SpinTwo Connect",
+            "description": "Una plataforma de comunicación unificada para equipos distribuidos."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Interesado en una demostración del producto?",
+        "subtitle": "Agenda una demostración con nuestro equipo de producto.",
+        "buttonLabel": "Solicitar una Demo"
+      }
+    },
+    "caseStudies": {
+      "meta": {
+        "title": "Casos de Éxito | SpinTwo",
+        "description": "Resultados reales de clientes reales. Explora los casos de éxito de SpinTwo en distintas industrias."
+      },
+      "hero": {
+        "eyebrow": "Casos de Éxito",
+        "title": "Resultados Reales, Impacto Real",
+        "subtitle": "Descubre cómo hemos ayudado a empresas de diversas industrias a lograr un crecimiento medible.",
+        "ctaPrimary": "Explorar Casos de Éxito",
+        "ctaSecondary": "Contáctenos"
+      },
+      "list": {
+        "title": "Casos de Éxito Destacados",
+        "items": [
+          {
+            "title": "Modernización de Plataforma Retail",
+            "description": "Cómo ayudamos a un minorista nacional a aumentar la conversión en línea en un 38%."
+          },
+          {
+            "title": "Rediseño de Onboarding Fintech",
+            "description": "Reducción del tiempo de incorporación en un 60% para un cliente fintech en rápido crecimiento."
+          },
+          {
+            "title": "Reconstrucción de Portal de Salud",
+            "description": "Una reconstrucción integral que mejoró los índices de satisfacción del portal de pacientes."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Quieres resultados como estos?",
+        "subtitle": "Hablemos sobre cómo podemos ayudarte a lograr resultados similares.",
+        "buttonLabel": "Iniciar un Proyecto"
+      }
+    },
+    "industries": {
+      "meta": {
+        "title": "Industrias | SpinTwo",
+        "description": "SpinTwo entrega soluciones digitales a medida en una amplia gama de industrias."
+      },
+      "hero": {
+        "eyebrow": "Industrias",
+        "title": "Experiencia en la Industria que Genera Resultados",
+        "subtitle": "Aportamos un profundo conocimiento del sector a cada industria que atendemos.",
+        "ctaPrimary": "Explorar Industrias",
+        "ctaSecondary": "Contáctenos"
+      },
+      "list": {
+        "title": "Industrias que Atendemos",
+        "items": [
+          {
+            "title": "Retail y Comercio Electrónico",
+            "description": "Tiendas y plataformas digitales diseñadas para convertir."
+          },
+          {
+            "title": "Servicios Financieros",
+            "description": "Productos financieros seguros, conformes y fáciles de usar."
+          },
+          {
+            "title": "Salud",
+            "description": "Experiencias digitales centradas en el paciente que cumplen con los requisitos normativos."
+          },
+          {
+            "title": "Tecnología",
+            "description": "Plataformas escalables para empresas tecnológicas de rápido crecimiento."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿No ves tu industria?",
+        "subtitle": "Adaptamos nuestra experiencia a las necesidades específicas de tu negocio.",
+        "buttonLabel": "Hablar con un Experto"
+      }
+    },
+    "resources": {
+      "meta": {
+        "title": "Recursos | SpinTwo",
+        "description": "Guías, artículos e ideas del equipo de SpinTwo."
+      },
+      "hero": {
+        "eyebrow": "Recursos",
+        "title": "Ideas y Recursos",
+        "subtitle": "Guías, artículos y mejores prácticas de nuestro equipo de especialistas.",
+        "ctaPrimary": "Explorar Recursos",
+        "ctaSecondary": "Suscribirse"
+      },
+      "list": {
+        "title": "Últimos Recursos",
+        "items": [
+          {
+            "title": "La Guía Completa del Rendimiento Web",
+            "description": "Estrategias prácticas para acelerar tu aplicación web."
+          },
+          {
+            "title": "Diseñando para la Accesibilidad",
+            "description": "Mejores prácticas para construir productos digitales inclusivos."
+          },
+          {
+            "title": "Eligiendo el Stack Tecnológico Correcto",
+            "description": "Un marco para evaluar decisiones tecnológicas en 2026."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Quieres más contenido como este?",
+        "subtitle": "Suscríbete a nuestro boletín para recibir las últimas actualizaciones.",
+        "buttonLabel": "Suscribirse"
+      }
+    },
+    "contactUs": {
+      "meta": {
+        "title": "Contáctenos | SpinTwo",
+        "description": "Ponte en contacto con el equipo de SpinTwo para hablar sobre tu próximo proyecto."
+      },
+      "hero": {
+        "eyebrow": "Contáctenos",
+        "title": "Construyamos Algo Juntos",
+        "subtitle": "Cuéntanos sobre tu proyecto y te responderemos dentro de un día hábil.",
+        "ctaPrimary": "Enviar Mensaje",
+        "ctaSecondary": "Ver Servicios"
+      },
+      "form": {
+        "name": "Nombre Completo",
+        "email": "Correo Electrónico",
+        "company": "Empresa",
+        "message": "Mensaje",
+        "submit": "Enviar Mensaje",
+        "namePlaceholder": "Juana Pérez",
+        "emailPlaceholder": "juana@empresa.com",
+        "companyPlaceholder": "Nombre de tu empresa",
+        "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+        "successMessage": "¡Gracias! Tu mensaje ha sido enviado.",
+        "errorMessage": "Algo salió mal. Por favor intenta de nuevo."
+      }
+    }
+  }
+}

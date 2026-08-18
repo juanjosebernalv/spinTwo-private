@@ -1,0 +1,128 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animations ────────────────────────────── */
+.revealLeft {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+.revealLeft.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.revealRight {
+  opacity: 0;
+  transform: translateX(28px);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  transition-delay: 100ms;
+}
+.revealRight.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Glow border ──────────────────────────────────── */
+.glowBorder {
+  @apply rounded-2xl p-px transition-shadow duration-300;
+  background: radial-gradient(280px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.55), #d1d5db 60%);
+}
+.glowBorder:hover {
+  @apply shadow-[0_0_32px_rgba(220,38,38,0.15)];
+}
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply bg-[#EEF2F6] px-6 py-20;
+}
+.grid {
+  @apply mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-2;
+}
+
+/* ── Left column ──────────────────────────────────── */
+.leftColumn {
+  @apply flex flex-col gap-6;
+}
+
+/* ── Header block ─────────────────────────────────── */
+.headerBlock {
+}
+.eyebrow {
+  @apply mb-2 text-xs font-bold uppercase tracking-widest text-red-600;
+}
+.sectionTitle {
+  @apply text-3xl font-bold text-gray-900 sm:text-4xl;
+}
+
+/* ── Blockquote ───────────────────────────────────── */
+.blockquote {
+  @apply border-l-4 border-red-600 pl-5;
+}
+.quoteText {
+  @apply font-logo text-base font-bold leading-relaxed text-gray-900 sm:text-lg;
+}
+
+/* ── Attribution ──────────────────────────────────── */
+.attributionName {
+  @apply font-logo font-bold text-gray-900;
+}
+.attributionRole {
+  @apply font-logo text-sm text-gray-500;
+}
+
+/* ── Image wrapper ────────────────────────────────── */
+.imageWrapper {
+  @apply overflow-hidden rounded-2xl shadow-md;
+}
+.image {
+  @apply w-full object-cover;
+}
+
+/* ── Trust card inner ─────────────────────────────── */
+.trustCardInner {
+  @apply rounded-2xl bg-white p-8;
+}
+.trustCardEyebrow {
+  @apply mb-6 text-xs font-bold uppercase tracking-widest text-red-600;
+}
+
+/* ── Trust list ───────────────────────────────────── */
+.trustList {
+  @apply flex flex-col;
+}
+.trustItem {
+  @apply flex gap-4 py-5;
+}
+.trustItemBordered {
+  @apply flex gap-4 py-5 border-t border-gray-100;
+}
+
+/* ── Check icon container ─────────────────────────── */
+.checkIconContainer {
+  @apply mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-red-100;
+}
+.checkIcon {
+  @apply text-red-500;
+}
+
+/* ── Trust item text ──────────────────────────────── */
+.trustItemTitle {
+  @apply font-bold text-gray-900;
+}
+.trustItemDescription {
+  @apply mt-1 font-logo text-sm leading-relaxed text-gray-500;
+}
+
+/* ── SpinTwo inline brand ─────────────────────────── */
+.spinTwoBase {
+  @apply font-logo font-bold;
+}
+.spinTwoPrefix {
+  @apply text-gray-900;
+}
+.spinTwoSuffix {
+  @apply text-red-600;
+}
