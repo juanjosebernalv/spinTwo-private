@@ -52,9 +52,17 @@ export function LanguageProvider({
   children,
   initialLocale,
 }: LanguageProviderProps) {
-  const [locale, setLocaleState] = useState<Locale>(
-    isLocale(initialLocale) ? initialLocale : DEFAULT_LOCALE,
-  );
+  const [locale, setLocaleState] = useState<Locale>(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const stored = window.localStorage.getItem(LOCALE_COOKIE_NAME);
+        if (isLocale(stored)) return stored;
+      } catch {
+        // localStorage unavailable - ignore
+      }
+    }
+    return isLocale(initialLocale) ? initialLocale : DEFAULT_LOCALE;
+  });
 
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next);
