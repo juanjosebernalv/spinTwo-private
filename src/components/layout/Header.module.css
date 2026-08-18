@@ -2,7 +2,7 @@
 
 /* ── Header element ───────────────────────────────── */
 .header {
-  @apply sticky top-0 z-30 bg-[#1B2533];
+  @apply sticky top-0 z-30 bg-brand-dark;
 }
 
 /* ── Inner container ──────────────────────────────── */
@@ -46,7 +46,7 @@
 
 /* ── Contact Us CTA ───────────────────────────────── */
 .contactCta {
-  @apply whitespace-nowrap bg-red-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-red-700;
+  @apply whitespace-nowrap bg-brand-red px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-red-dark;
 }
 
 /* ── Arrow icon SVG ───────────────────────────────── */

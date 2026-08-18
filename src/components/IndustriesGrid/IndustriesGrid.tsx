@@ -20,37 +20,37 @@ interface Industry {
 
 const INDUSTRIES: Industry[] = [
   {
-    icon: <AccountBalanceIcon sx={{ fontSize: 22, color: "#dc2626" }} />,
+    icon: <AccountBalanceIcon sx={{ fontSize: 22, color: "#E00822" }} />,
     title: "Government",
     description:
       "Cutting-edge infrastructure to address complex data analytics aligned with the government's mission, built on our founders' direct experience inside federal agencies.",
   },
   {
-    icon: <VolunteerActivismIcon sx={{ fontSize: 22, color: "#dc2626" }} />,
+    icon: <VolunteerActivismIcon sx={{ fontSize: 22, color: "#E00822" }} />,
     title: "Healthcare",
     description:
       "Data is vast, complex, and underutilized. With advanced computing we transform it into actionable insights that accelerate discovery, improve outcomes, and power the next generation of medical innovation.",
   },
   {
-    icon: <SchoolIcon sx={{ fontSize: 22, color: "#dc2626" }} />,
+    icon: <SchoolIcon sx={{ fontSize: 22, color: "#E00822" }} />,
     title: "Academia & Research",
     description:
       "We've been the researchers waiting on failing pipelines before a grant deadline. We build HPC the way we wished someone had built it for us.",
   },
   {
-    icon: <OfflineBoltIcon sx={{ fontSize: 22, color: "#dc2626" }} />,
+    icon: <OfflineBoltIcon sx={{ fontSize: 22, color: "#E00822" }} />,
     title: "Energy Sector",
     description:
       "We've modeled physical systems at particle physics scale. We bring that same scientific rigor to your energy processes, turning complex data into optimization opportunities through advanced analytics.",
   },
   {
-    icon: <FactoryIcon sx={{ fontSize: 22, color: "#dc2626" }} />,
+    icon: <FactoryIcon sx={{ fontSize: 22, color: "#E00822" }} />,
     title: "Manufacturing & Engineering",
     description:
       "We treat your CFD and FEA pipelines the way our founders approached simulations for NASA, precision first. Your digital twin will run right, not just fast.",
   },
   {
-    icon: <AssuredWorkloadIcon sx={{ fontSize: 22, color: "#dc2626" }} />,
+    icon: <AssuredWorkloadIcon sx={{ fontSize: 22, color: "#E00822" }} />,
     title: "Financial Sector",
     description:
       "Scalable HPC and AI for portfolio simulation, real-time risk modeling, fraud detection, and high frequency trading infrastructure.",

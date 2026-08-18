@@ -28,10 +28,10 @@
 /* ── Glow border ──────────────────────────────────── */
 .glowBorder {
   @apply rounded-2xl p-px transition-shadow duration-300;
-  background: radial-gradient(280px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.55), #d1d5db 60%);
+  background: radial-gradient(280px at var(--x, 50%) var(--y, 50%), rgba(224, 8, 34, 0.55), #d1d5db 60%);
 }
 .glowBorder:hover {
-  @apply shadow-[0_0_32px_rgba(220,38,38,0.15)];
+  @apply shadow-[0_0_32px_rgba(224,8,34,0.15)];
 }
 
 /* ── Section layout ───────────────────────────────── */
@@ -51,7 +51,7 @@
 .headerBlock {
 }
 .eyebrow {
-  @apply mb-2 text-xs font-bold uppercase tracking-widest text-red-600;
+  @apply mb-2 text-xs font-bold uppercase tracking-widest text-brand-red;
 }
 .sectionTitle {
   @apply text-3xl font-bold text-gray-900 sm:text-4xl;
@@ -59,7 +59,7 @@
 
 /* ── Blockquote ───────────────────────────────────── */
 .blockquote {
-  @apply border-l-4 border-red-600 pl-5;
+  @apply border-l-4 border-brand-red pl-5;
 }
 .quoteText {
   @apply font-logo text-base font-bold leading-relaxed text-gray-900 sm:text-lg;
@@ -86,7 +86,7 @@
   @apply rounded-2xl bg-white p-8;
 }
 .trustCardEyebrow {
-  @apply mb-6 text-xs font-bold uppercase tracking-widest text-red-600;
+  @apply mb-6 text-xs font-bold uppercase tracking-widest text-brand-red;
 }
 
 /* ── Trust list ───────────────────────────────────── */
@@ -105,7 +105,7 @@
   @apply mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-red-100;
 }
 .checkIcon {
-  @apply text-red-500;
+  @apply text-brand-red;
 }
 
 /* ── Trust item text ──────────────────────────────── */
@@ -124,5 +124,5 @@
   @apply text-gray-900;
 }
 .spinTwoSuffix {
-  @apply text-red-600;
+  @apply text-brand-red;
 }

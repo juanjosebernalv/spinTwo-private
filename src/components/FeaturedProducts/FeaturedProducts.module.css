@@ -28,13 +28,13 @@
   @apply mb-12 grid gap-8 lg:grid-cols-2 lg:items-end;
 }
 .eyebrow {
-  @apply mb-3 text-xs font-bold uppercase tracking-widest text-red-600;
+  @apply mb-3 text-xs font-bold uppercase tracking-widest text-brand-red;
 }
 .sectionTitle {
   @apply text-3xl font-bold leading-tight text-gray-900 sm:text-4xl;
 }
 .sectionSub {
-  @apply border-l-2 border-red-600 pl-5;
+  @apply border-l-2 border-brand-red pl-5;
 }
 .sectionSubText {
   @apply font-logo text-sm leading-relaxed text-gray-600;
@@ -51,10 +51,10 @@
 /* ── Glow border ──────────────────────────────────── */
 .glowBorder {
   @apply flex flex-1 overflow-hidden rounded-2xl p-px transition-shadow duration-300;
-  background: radial-gradient(280px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.6), #d1d5db 60%);
+  background: radial-gradient(280px at var(--x, 50%) var(--y, 50%), rgba(224, 8, 34, 0.6), #d1d5db 60%);
 }
 .glowBorder:hover {
-  @apply shadow-[0_0_32px_rgba(220,38,38,0.15)];
+  @apply shadow-[0_0_32px_rgba(224,8,34,0.15)];
 }
 
 /* ── Card inner structure ─────────────────────────── */
@@ -62,7 +62,7 @@
   @apply flex flex-1 flex-col overflow-hidden rounded-2xl;
 }
 .cardHeaderDark {
-  @apply bg-[#1B2533] px-6 py-6;
+  @apply bg-brand-dark px-6 py-6;
 }
 .cardHeaderLight {
   @apply bg-[#EEF2F6] px-6 py-6;
@@ -93,12 +93,12 @@
   @apply mt-6 flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all duration-300;
 }
 .exploreButtonDark {
-  @apply bg-red-600 text-white;
-  box-shadow: 0 0 20px rgba(220, 38, 38, 0.45);
+  @apply bg-brand-red text-white;
+  box-shadow: 0 0 20px rgba(224, 8, 34, 0.45);
 }
 .exploreButtonDark:hover {
-  @apply bg-red-700;
-  box-shadow: 0 0 32px rgba(220, 38, 38, 0.65);
+  @apply bg-brand-red-dark;
+  box-shadow: 0 0 32px rgba(224, 8, 34, 0.65);
 }
 .exploreButtonLight {
   @apply bg-gray-100 text-gray-900;
@@ -109,7 +109,7 @@
 
 /* ── Icons ────────────────────────────────────────── */
 .featureIcon {
-  @apply shrink-0 text-red-600;
+  @apply shrink-0 text-brand-red;
 }
 
 /* ── Product name ─────────────────────────────────── */
@@ -121,4 +121,4 @@
 }
 .productNamePrefixDark { @apply text-white; }
 .productNamePrefixLight { @apply text-gray-900; }
-.productNameSuffix { @apply text-red-500; }
+.productNameSuffix { @apply text-brand-red; }

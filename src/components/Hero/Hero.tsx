@@ -68,7 +68,7 @@ function ImageHero({ title, subtitle, primaryCta, secondaryCta, backgroundImage 
               {primaryCta && (
                 <Link
                   href={primaryCta.href}
-                  className="inline-flex w-full items-center justify-center bg-red-600 px-6 py-4 text-sm font-bold tracking-widest text-white uppercase transition-colors hover:bg-red-700 sm:w-auto sm:justify-start"
+                  className="inline-flex w-full items-center justify-center bg-brand-red px-6 py-4 text-sm font-bold tracking-widest text-white uppercase transition-colors hover:bg-brand-red-dark sm:w-auto sm:justify-start"
                 >
                   {primaryCta.label}
                 </Link>

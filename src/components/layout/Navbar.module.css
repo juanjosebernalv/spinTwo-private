@@ -2,7 +2,7 @@
 
 /* ── Active underline animation ───────────────────── */
 .activeUnderline {
-  @apply absolute bottom-0 left-3 right-3 h-[2px] origin-left bg-red-500;
+  @apply absolute bottom-0 left-3 right-3 h-[2px] origin-left bg-brand-red;
   animation: nav-slide-in 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
@@ -26,7 +26,7 @@
   @apply relative inline-flex items-center gap-0.5 px-3 py-5 text-sm font-medium transition-colors duration-200 hover:text-white;
 }
 .navLinkActive {
-  @apply text-red-500;
+  @apply text-brand-red;
 }
 .navLinkInactive {
   @apply text-white/70;
@@ -51,7 +51,7 @@
   @apply text-gray-900;
 }
 .dropdownItemSuffix {
-  @apply text-red-600;
+  @apply text-brand-red;
 }
 .dropdownPlainItem {
   @apply flex items-center gap-2.5 px-6 py-3 text-sm font-bold text-gray-900 transition-colors hover:bg-gray-50;
@@ -59,13 +59,13 @@
 
 /* ── Mobile menu panel ────────────────────────────── */
 .mobileMenu {
-  @apply absolute top-12 right-0 z-50 flex w-64 flex-col gap-1 rounded-xl border border-white/10 bg-[#1B2533] p-2 shadow-lg md:hidden;
+  @apply absolute top-12 right-0 z-50 flex w-64 flex-col gap-1 rounded-xl border border-white/10 bg-brand-dark p-2 shadow-lg md:hidden;
 }
 .mobileItem {
   @apply flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm transition-colors hover:bg-white/10;
 }
 .mobileItemActive {
-  @apply text-red-400;
+  @apply text-brand-red;
 }
 .mobileItemInactive {
   @apply text-white/70;
@@ -74,7 +74,7 @@
   @apply mt-2 border-t border-white/10 pt-2;
 }
 .mobileCtaLink {
-  @apply flex w-full items-center justify-center rounded-lg bg-red-600 px-3 py-2 text-sm font-semibold text-white hover:bg-red-700;
+  @apply flex w-full items-center justify-center rounded-lg bg-brand-red px-3 py-2 text-sm font-semibold text-white hover:bg-brand-red-dark;
 }
 
 /* ── ThinLinc brand icon ──────────────────────────── */
@@ -90,7 +90,7 @@
   @apply h-4 w-4 shrink-0;
 }
 .openOnDemandSvg {
-  @apply h-5 w-5 text-red-600;
+  @apply h-5 w-5 text-brand-red;
 }
 
 /* ── Desktop dropdown list item ───────────────────── */

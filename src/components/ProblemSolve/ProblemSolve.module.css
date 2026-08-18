@@ -29,15 +29,15 @@
 /* ── Glow border ──────────────────────────────────── */
 .glowBorder {
   @apply flex flex-1 rounded-2xl p-px transition-shadow duration-300;
-  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.55), #d1d5db 60%);
+  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(224, 8, 34, 0.55), #d1d5db 60%);
 }
 .glowBorder:hover {
-  @apply shadow-[0_0_32px_rgba(220,38,38,0.12)];
+  @apply shadow-[0_0_32px_rgba(224,8,34,0.12)];
 }
 
 /* ── Section layout ───────────────────────────────── */
 .section {
-  @apply bg-[#EEF2F6] px-6 py-20;
+  @apply bg-brand-light px-6 py-20;
 }
 .grid {
   @apply mx-auto grid max-w-6xl items-stretch gap-12 lg:grid-cols-2;
@@ -58,7 +58,7 @@
 
 /* ── Eyebrow ──────────────────────────────────────── */
 .eyebrow {
-  @apply text-xs font-bold uppercase tracking-widest text-red-600;
+  @apply text-xs font-bold uppercase tracking-widest text-brand-red;
 }
 
 /* ── Section title ────────────────────────────────── */
@@ -121,5 +121,5 @@
   @apply text-gray-900;
 }
 .spinTwoSuffix {
-  @apply text-red-600;
+  @apply text-brand-red;
 }

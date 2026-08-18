@@ -24,10 +24,10 @@
 /* ── Glow border ──────────────────────────────────── */
 .glowBorder {
   @apply relative h-full rounded-2xl p-px transition-shadow duration-300;
-  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.55), #d1d5db 60%);
+  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(224, 8, 34, 0.55), #d1d5db 60%);
 }
 .glowBorder:hover {
-  @apply shadow-[0_0_32px_rgba(220,38,38,0.15)];
+  @apply shadow-[0_0_32px_rgba(224,8,34,0.15)];
 }
 
 /* ── Card inner ───────────────────────────────────── */
@@ -42,7 +42,7 @@
 
 /* ── Icon container ───────────────────────────────── */
 .iconContainer {
-  @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-red-600;
+  @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-red;
 }
 
 /* ── Card title ───────────────────────────────────── */
@@ -57,7 +57,7 @@
 
 /* ── Section layout ───────────────────────────────── */
 .section {
-  @apply bg-gray-50 px-6 py-16;
+  @apply bg-brand-light px-6 py-16;
 }
 .grid {
   @apply mx-auto grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4;

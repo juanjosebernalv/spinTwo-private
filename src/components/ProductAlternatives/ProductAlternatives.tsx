@@ -4,8 +4,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function SpinProduct({ prefix, suffix }: { prefix: string; suffix: string }) {
   return (
     <span className="font-bold">
-      <span className="text-[#1B2533]">{prefix}</span>
-      <span className="text-red-600">{suffix}</span>
+      <span className="text-brand-dark">{prefix}</span>
+      <span className="text-brand-red">{suffix}</span>
     </span>
   );
 }
@@ -70,7 +70,7 @@ export function ProductAlternatives() {
               </p>
               <Link
                 href={card.href}
-                className="flex items-center justify-between bg-red-600 px-6 py-4 text-sm font-bold tracking-widest text-white transition-colors hover:bg-red-700"
+                className="flex items-center justify-between bg-brand-red px-6 py-4 text-sm font-bold tracking-widest text-white transition-colors hover:bg-brand-red-dark"
               >
                 {card.buttonLabel}
                 <ArrowForwardIcon sx={{ fontSize: 18 }} />

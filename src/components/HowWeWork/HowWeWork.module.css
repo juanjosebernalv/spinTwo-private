@@ -18,15 +18,15 @@
 /* ── Glow border ──────────────────────────────────── */
 .glowBorder {
   @apply flex flex-1 rounded-2xl p-px transition-shadow duration-300;
-  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(220, 38, 38, 0.55), #d1d5db 60%);
+  background: radial-gradient(250px at var(--x, 50%) var(--y, 50%), rgba(224, 8, 34, 0.55), #d1d5db 60%);
 }
 .glowBorder:hover {
-  @apply shadow-[0_0_32px_rgba(220,38,38,0.12)];
+  @apply shadow-[0_0_32px_rgba(224,8,34,0.12)];
 }
 
 /* ── Section layout ───────────────────────────────── */
 .section {
-  @apply bg-[#EEF2F6] px-6 py-20;
+  @apply bg-brand-light px-6 py-20;
 }
 .container {
   @apply mx-auto max-w-6xl;
@@ -37,7 +37,7 @@
   @apply mb-12 text-center;
 }
 .eyebrow {
-  @apply mb-3 text-xs font-bold uppercase tracking-widest text-red-600;
+  @apply mb-3 text-xs font-bold uppercase tracking-widest text-brand-red;
 }
 .sectionTitle {
   @apply text-3xl font-bold text-gray-900 sm:text-4xl;
@@ -68,7 +68,7 @@
 
 /* ── Step number badge ────────────────────────────── */
 .stepNumber {
-  @apply flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white;
+  @apply flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-red text-sm font-bold text-white;
 }
 
 /* ── Step title ───────────────────────────────────── */
@@ -86,5 +86,5 @@
   @apply mt-5;
 }
 .badge {
-  @apply inline-block rounded-full bg-red-50 px-4 py-1.5 font-logo text-xs font-semibold uppercase tracking-wider text-red-500;
+  @apply inline-block rounded-full bg-red-50 px-4 py-1.5 font-logo text-xs font-semibold uppercase tracking-wider text-brand-red;
 }

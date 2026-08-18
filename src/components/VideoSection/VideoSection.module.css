@@ -26,7 +26,7 @@
   @apply mb-8 text-center;
 }
 .eyebrow {
-  @apply mb-3 text-xs font-bold uppercase tracking-widest text-red-600;
+  @apply mb-3 text-xs font-bold uppercase tracking-widest text-brand-red;
 }
 .sectionTitle {
   @apply text-3xl font-bold text-gray-900 sm:text-4xl;
@@ -40,10 +40,10 @@
   @apply font-logo font-bold;
 }
 .spinTwoPrefix {
-  @apply text-[#1B2533];
+  @apply text-brand-dark;
 }
 .spinTwoSuffix {
-  @apply text-red-600;
+  @apply text-brand-red;
 }
 .spinTwoSm {
   @apply text-sm;
@@ -76,7 +76,7 @@
 
 /* ── Play button ──────────────────────────────────── */
 .playButton {
-  @apply flex h-16 w-16 items-center justify-center rounded-full bg-red-600 shadow-lg transition-transform duration-200;
+  @apply flex h-16 w-16 items-center justify-center rounded-full bg-brand-red shadow-lg transition-transform duration-200;
 }
 .playButton:hover {
   @apply scale-110;

@@ -2,7 +2,7 @@
 
 /* ── Main dark section ────────────────────────────── */
 .darkSection {
-  @apply bg-[#1B2533] px-6 py-14 text-white;
+  @apply bg-brand-dark px-6 py-14 text-white;
 }
 .darkGrid {
   @apply mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-4;
@@ -44,7 +44,7 @@
   @apply mb-2 w-full bg-white px-4 py-2 text-sm text-gray-800 outline-none placeholder:text-gray-400;
 }
 .subscribeButton {
-  @apply w-full bg-red-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-red-700;
+  @apply w-full bg-brand-red px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-red-dark;
 }
 
 /* ── Bottom bar ───────────────────────────────────── */
@@ -86,7 +86,7 @@
   @apply font-logo;
 }
 .spinTwoSuffix {
-  @apply text-red-500;
+  @apply text-brand-red;
 }
 .spinTwoWhite {
   @apply font-semibold text-white;

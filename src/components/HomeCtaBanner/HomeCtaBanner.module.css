@@ -2,7 +2,7 @@
 
 /* ── Section layout ───────────────────────────────── */
 .section {
-  @apply bg-red-600 px-6 py-20 text-center text-white;
+  @apply bg-brand-red px-6 py-20 text-center text-white;
 }
 .container {
   @apply relative mx-auto max-w-3xl;
@@ -33,7 +33,7 @@
 
 /* ── Primary CTA ──────────────────────────────────── */
 .ctaPrimary {
-  @apply border-2 border-white bg-white px-7 py-3.5 text-xs font-bold uppercase tracking-widest text-red-600 transition-colors hover:bg-red-50;
+  @apply border-2 border-white bg-white px-7 py-3.5 text-xs font-bold uppercase tracking-widest text-brand-red transition-colors hover:bg-red-50;
 }
 
 /* ── Secondary CTA ────────────────────────────────── */
