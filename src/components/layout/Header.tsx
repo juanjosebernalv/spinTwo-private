@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Navbar } from "@/components/layout/Navbar";
+import { imgSrc } from "@/lib/imgSrc";
 import styles from "./Header.module.css";
 
 export function Header() {
@@ -11,7 +12,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className={styles.logoLink}>
           <Image
-            src="/images/spin-two-logo.png"
+            src={imgSrc("/images/spin-two-logo.png")}
             alt="SpinTwo"
             width={140}
             height={52}

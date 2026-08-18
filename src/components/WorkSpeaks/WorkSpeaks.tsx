@@ -5,6 +5,7 @@ import { useRef } from "react";
 import CheckIcon from "@mui/icons-material/Check";
 
 import { useReveal } from "@/hooks/useReveal";
+import { imgSrc } from "@/lib/imgSrc";
 import styles from "./WorkSpeaks.module.css";
 
 function SpinTwo() {
@@ -92,7 +93,7 @@ export function WorkSpeaks() {
 
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/works-speaks.jpg"
+              src={imgSrc("/images/works-speaks.jpg")}
               alt="Life sciences HPC deployment"
               width={640}
               height={380}

@@ -8,6 +8,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import { useTranslation } from "@/hooks/useTranslation";
+import { imgSrc } from "@/lib/imgSrc";
 import styles from "./Footer.module.css";
 
 function SpinTwoLogo({ variant }: { variant?: "white" | "gray" }) {
@@ -46,7 +47,7 @@ export function Footer() {
           <div className={styles.brandColumn}>
             <div>
               <Image
-                src="/images/spin-two-logo.png"
+                src={imgSrc("/images/spin-two-logo.png")}
                 alt="SpinTwo"
                 width={160}
                 height={60}

@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import CheckIcon from "@mui/icons-material/Check";
 
 import { useReveal } from "@/hooks/useReveal";
+import { imgSrc } from "@/lib/imgSrc";
 import styles from "./ProblemSolve.module.css";
 
 function SpinTwo() {
@@ -122,7 +123,7 @@ export function ProblemSolve() {
           className={`${styles.imageWrapper} ${styles.revealXLeft} ${imageVisible ? styles.visible : ""}`}
         >
           <Image
-            src="/images/problem-solve.png"
+            src={imgSrc("/images/problem-solve.png")}
             alt="HPC infrastructure dashboard"
             fill
             className={styles.image}

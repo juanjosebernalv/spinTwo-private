@@ -11,6 +11,7 @@ import { IndustriesGrid } from "@/components/IndustriesGrid/IndustriesGrid";
 import { StatsBar } from "@/components/StatsBar/StatsBar";
 import { VideoSection } from "@/components/VideoSection/VideoSection";
 import { useTranslation } from "@/hooks/useTranslation";
+import { imgSrc } from "@/lib/imgSrc";
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -19,7 +20,7 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        backgroundImage="/images/home-bg.jpg"
+        backgroundImage={imgSrc("/images/home-bg.jpg")}
         title={page.hero.title}
         subtitle={page.hero.subtitle}
         primaryCta={{ label: page.hero.ctaPrimary, href: "/contact-us" }}
