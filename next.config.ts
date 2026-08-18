@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.GITHUB_ACTIONS === "true";
+
 const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true,
+  basePath: isProd ? "/spinTwo-private" : "",
   images: {
-    remotePatterns: [
-      { protocol: "https", hostname: "img.youtube.com" },
-    ],
+    unoptimized: true,
   },
 };
 
