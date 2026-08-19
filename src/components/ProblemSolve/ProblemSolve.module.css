@@ -63,7 +63,7 @@
 
 /* ── Section title ────────────────────────────────── */
 .sectionTitle {
-  @apply text-3xl font-bold leading-tight text-gray-900 sm:text-4xl;
+  @apply text-3xl font-bold leading-tight tracking-wide text-gray-900 sm:text-4xl;
 }
 
 /* ── Body text ────────────────────────────────────── */
@@ -107,7 +107,7 @@
 
 /* ── Card text ────────────────────────────────────── */
 .cardTitle {
-  @apply font-bold text-gray-900;
+  @apply font-bold tracking-wide text-gray-900;
 }
 .cardDescription {
   @apply mt-1 font-logo text-sm leading-relaxed text-gray-500;
