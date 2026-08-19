@@ -61,11 +61,11 @@ function HeroContent({ title, subtitle, primaryCta, secondaryCta }: ContentProps
           {subtitle}
         </p>
         {(primaryCta || secondaryCta) && (
-          <div className="mt-10 flex flex-col gap-4">
+          <div className="mt-10 flex flex-col gap-4 sm:w-fit">
             {primaryCta && (
               <Link
                 href={primaryCta.href}
-                className="inline-flex w-full items-center justify-center bg-brand-red px-6 py-4 text-sm font-bold text-white uppercase transition-colors hover:bg-brand-red-dark sm:w-auto sm:justify-start"
+                className="inline-flex w-full items-center justify-center bg-brand-red px-6 py-4 text-sm font-bold text-white uppercase transition-colors hover:bg-brand-red-dark"
               >
                 {primaryCta.label}
               </Link>
@@ -73,7 +73,7 @@ function HeroContent({ title, subtitle, primaryCta, secondaryCta }: ContentProps
             {secondaryCta && (
               <Link
                 href={secondaryCta.href}
-                className="inline-flex w-full items-center justify-center border border-white px-6 py-4 text-sm font-bold tracking-widest text-white uppercase transition-colors hover:bg-white/10 sm:w-auto sm:justify-start"
+                className="inline-flex w-full items-center justify-center border border-white px-6 py-4 text-sm font-bold tracking-widest text-white uppercase transition-colors hover:bg-white/10"
               >
                 {secondaryCta.label}
               </Link>

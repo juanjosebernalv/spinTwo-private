@@ -67,18 +67,20 @@ function ProductName({
   suffix,
   dark,
   size = "lg",
+  white,
 }: {
   prefix: string;
   suffix: string;
   dark?: boolean;
   size?: "lg" | "sm";
+  white?: boolean;
 }) {
   return (
     <span className={size === "lg" ? styles.productNameLg : styles.productNameSm}>
-      <span className={dark ? styles.productNamePrefixDark : styles.productNamePrefixLight}>
+      <span className={white ? "text-white" : (dark ? styles.productNamePrefixDark : styles.productNamePrefixLight)}>
         {prefix}
       </span>
-      <span className={styles.productNameSuffix}>{suffix}</span>
+      <span className={white ? "text-white" : styles.productNameSuffix}>{suffix}</span>
     </span>
   );
 }
@@ -141,7 +143,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
               className={`${styles.exploreButton} ${isDark ? styles.exploreButtonDark : styles.exploreButtonLight}`}
             >
               <span>Explore</span>
-              <ProductName prefix={product.prefix} suffix={product.suffix} size="sm" />
+              <ProductName prefix={product.prefix} suffix={product.suffix} size="sm" white={isDark} />
               <ArrowForwardIcon sx={{ fontSize: 16 }} />
             </Link>
           </div>
