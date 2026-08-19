@@ -118,10 +118,10 @@
 
 /* ── SpinTwo inline brand ─────────────────────────── */
 .spinTwoBase {
-  @apply font-sans font-bold;
+  @apply font-sans font-bold normal-case;
 }
 .spinTwoPrefix {
-  @apply text-gray-900;
+  @apply text-brand-dark;
 }
 .spinTwoSuffix {
   @apply text-brand-red;

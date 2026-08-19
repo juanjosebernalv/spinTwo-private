@@ -83,14 +83,14 @@
 
 /* ── SpinTwo inline brand ─────────────────────────── */
 .spinTwoBase {
-  @apply font-sans;
+  @apply font-sans font-bold;
+}
+.spinTwoPrefixDark {
+  @apply text-white;
+}
+.spinTwoPrefixLight {
+  @apply text-brand-dark;
 }
 .spinTwoSuffix {
   @apply text-brand-red;
-}
-.spinTwoWhite {
-  @apply font-semibold text-white;
-}
-.spinTwoGray {
-  @apply font-semibold text-gray-800;
 }

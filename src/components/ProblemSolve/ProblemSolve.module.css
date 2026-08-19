@@ -118,7 +118,7 @@
   @apply font-sans font-bold;
 }
 .spinTwoPrefix {
-  @apply text-gray-900;
+  @apply text-brand-dark;
 }
 .spinTwoSuffix {
   @apply text-brand-red;

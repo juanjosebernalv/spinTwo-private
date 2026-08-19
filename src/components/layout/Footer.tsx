@@ -12,16 +12,12 @@ import { imgSrc } from "@/lib/imgSrc";
 import styles from "./Footer.module.css";
 
 function SpinTwoLogo({ variant }: { variant?: "white" | "gray" }) {
-  const suffixClass = variant === "white"
-    ? styles.spinTwoWhite
-    : variant === "gray"
-    ? styles.spinTwoGray
-    : styles.spinTwoSuffix;
+  const prefixClass = variant === "white" ? styles.spinTwoPrefixDark : styles.spinTwoPrefixLight;
 
   return (
     <span className={styles.spinTwoBase}>
-      <span>spin</span>
-      <span className={suffixClass}>Two</span>
+      <span className={prefixClass}>spin</span>
+      <span className={styles.spinTwoSuffix}>Two</span>
     </span>
   );
 }
