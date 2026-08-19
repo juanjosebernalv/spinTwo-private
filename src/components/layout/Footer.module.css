@@ -83,7 +83,7 @@
 
 /* ── SpinTwo inline brand ─────────────────────────── */
 .spinTwoBase {
-  @apply font-logo;
+  @apply font-sans;
 }
 .spinTwoSuffix {
   @apply text-brand-red;

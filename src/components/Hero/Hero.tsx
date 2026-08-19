@@ -54,7 +54,7 @@ function HeroContent({ title, subtitle, primaryCta, secondaryCta }: ContentProps
   return (
     <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-24">
       <div className="w-full sm:max-w-[52%]">
-        <h1 className="text-4xl font-bold leading-tight tracking-wider text-white sm:text-5xl lg:text-6xl">
+        <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
           {title}
         </h1>
         <p className="mt-6 text-base leading-relaxed text-white/80 sm:text-lg">
@@ -65,7 +65,7 @@ function HeroContent({ title, subtitle, primaryCta, secondaryCta }: ContentProps
             {primaryCta && (
               <Link
                 href={primaryCta.href}
-                className="inline-flex w-full items-center justify-center bg-brand-red px-6 py-4 text-sm font-bold tracking-wide text-white uppercase transition-colors hover:bg-brand-red-dark sm:w-auto sm:justify-start"
+                className="inline-flex w-full items-center justify-center bg-brand-red px-6 py-4 text-sm font-bold text-white uppercase transition-colors hover:bg-brand-red-dark sm:w-auto sm:justify-start"
               >
                 {primaryCta.label}
               </Link>
@@ -142,11 +142,11 @@ function SimpleHero({ title, subtitle, primaryCta, secondaryCta, eyebrow }: Omit
     <section className="border-b border-black/5 bg-linear-to-b from-black/[0.02] to-transparent dark:border-white/10 dark:from-white/[0.03]">
       <div className="mx-auto flex max-w-5xl flex-col items-start gap-6 px-6 py-20 sm:py-28">
         {eyebrow && (
-          <p className="text-sm font-semibold uppercase tracking-wide text-current/70">
+          <p className="text-sm font-semibold uppercase text-current/70">
             {eyebrow}
           </p>
         )}
-        <h1 className="text-balance text-4xl font-bold tracking-wide sm:text-5xl">
+        <h1 className="text-balance text-4xl font-bold sm:text-5xl">
           {title}
         </h1>
         <p className="max-w-2xl text-lg text-current/70">{subtitle}</p>

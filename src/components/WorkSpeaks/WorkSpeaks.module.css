@@ -54,7 +54,7 @@
   @apply mb-2 text-xs font-bold uppercase tracking-widest text-brand-red;
 }
 .sectionTitle {
-  @apply text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl;
+  @apply text-3xl font-bold text-gray-900 sm:text-4xl;
 }
 
 /* ── Blockquote ───────────────────────────────────── */
@@ -118,7 +118,7 @@
 
 /* ── SpinTwo inline brand ─────────────────────────── */
 .spinTwoBase {
-  @apply font-logo font-bold;
+  @apply font-sans font-bold;
 }
 .spinTwoPrefix {
   @apply text-gray-900;

@@ -52,7 +52,7 @@ export function ProductAlternatives() {
   return (
     <section className="bg-[#EEF2F6] px-6 py-16">
       <div className="mx-auto max-w-6xl">
-        <h2 className="mb-10 text-2xl font-bold tracking-wide text-gray-900">
+        <h2 className="mb-10 text-2xl font-bold text-gray-900">
           Not sure <SpinProduct prefix="spin" suffix="Up" /> is right for you?
         </h2>
 

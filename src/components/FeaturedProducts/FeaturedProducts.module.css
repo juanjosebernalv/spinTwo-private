@@ -31,7 +31,7 @@
   @apply mb-3 text-xs font-bold uppercase tracking-widest text-brand-red;
 }
 .sectionTitle {
-  @apply text-3xl font-bold leading-tight tracking-wide text-gray-900 sm:text-4xl;
+  @apply text-3xl font-bold leading-tight text-gray-900 sm:text-4xl;
 }
 .sectionSub {
   @apply border-l-2 border-brand-red pl-5;
@@ -114,10 +114,10 @@
 
 /* ── Product name ─────────────────────────────────── */
 .productNameLg {
-  @apply font-logo font-bold text-2xl;
+  @apply font-sans font-bold text-2xl;
 }
 .productNameSm {
-  @apply font-logo font-bold text-base;
+  @apply font-sans font-bold text-base;
 }
 .productNamePrefixDark { @apply text-white; }
 .productNamePrefixLight { @apply text-gray-900; }
