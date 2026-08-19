@@ -141,7 +141,7 @@ export function Footer() {
               Phone: {t.common.footer.phone}
             </p>
             <p className={styles.contactLine}>
-              Email: {t.common.footer.contactEmail}
+              Email: contact@<SpinTwoLogo />.com
             </p>
           </div>
         </div>
