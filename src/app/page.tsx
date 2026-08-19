@@ -20,7 +20,7 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        backgroundImage={imgSrc("/images/home-bg.jpg")}
+        backgroundVideo={imgSrc("/videos/spin-two-homepage-video.mp4")}
         title={page.hero.title}
         subtitle={page.hero.subtitle}
         primaryCta={{ label: page.hero.ctaPrimary, href: "/contact-us" }}

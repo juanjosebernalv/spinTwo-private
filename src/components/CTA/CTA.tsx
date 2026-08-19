@@ -16,7 +16,7 @@ export function CTA({ title, subtitle, buttonLabel, href }: CTAProps) {
     <section className="border-t border-black/5 dark:border-white/10">
       <div className="mx-auto flex max-w-5xl flex-col items-start gap-4 px-6 py-16 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h2 className="text-2xl font-semibold">{title}</h2>
+          <h2 className="text-2xl font-semibold tracking-wide">{title}</h2>
           <p className="mt-2 text-current/70">{subtitle}</p>
         </div>
         <Link

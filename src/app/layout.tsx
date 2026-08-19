@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 
 import "./globals.css";
 
@@ -15,6 +16,13 @@ const inter = Inter({
   display: "swap",
 });
 
+const impact = localFont({
+  src: "./fonts/impact.woff",
+  variable: "--font-impact",
+  display: "swap",
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: en.pages.home.meta.title,
   description: en.pages.home.meta.description,
@@ -25,7 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html
       lang={DEFAULT_LOCALE}
       suppressHydrationWarning
-      className={`${inter.variable} h-full antialiased`}
+      className={`${inter.variable} ${impact.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         <Providers initialLocale={DEFAULT_LOCALE}>

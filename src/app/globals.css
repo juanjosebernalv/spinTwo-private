@@ -30,8 +30,7 @@
   --color-brand-red-dark: var(--color-brand-red-dark);
   --color-brand-dark: var(--color-brand-dark);
   --color-brand-light: var(--color-brand-light);
-  --font-sans: Impact, "Arial Narrow", Haettenschweiler, sans-serif-condensed,
-    sans-serif;
+  --font-sans: var(--font-impact), Impact, "Arial Narrow", Haettenschweiler, sans-serif-condensed, sans-serif;
   --font-logo: var(--font-inter), system-ui, -apple-system, sans-serif;
   --font-mono:
     ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
