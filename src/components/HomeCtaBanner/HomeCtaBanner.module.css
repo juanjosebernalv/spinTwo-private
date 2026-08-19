@@ -23,7 +23,7 @@
   @apply font-sans font-bold;
 }
 .productNameSuffix {
-  @apply font-sans font-bold italic;
+  @apply font-sans font-bold;
 }
 
 /* ── CTA row ──────────────────────────────────────── */
