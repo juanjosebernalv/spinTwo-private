@@ -47,7 +47,7 @@
 
 /* ── Card title ───────────────────────────────────── */
 .cardTitle {
-  @apply text-base font-bold tracking-wide text-gray-900;
+  @apply text-base font-bold text-gray-900;
 }
 
 /* ── Card description ─────────────────────────────── */
