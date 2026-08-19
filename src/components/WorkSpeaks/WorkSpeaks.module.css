@@ -118,7 +118,7 @@
 
 /* ── SpinTwo inline brand ─────────────────────────── */
 .spinTwoBase {
-  @apply font-sans font-bold normal-case tracking-normal;
+  @apply font-sans font-bold normal-case;
 }
 .spinTwoPrefix {
   @apply text-brand-dark;
