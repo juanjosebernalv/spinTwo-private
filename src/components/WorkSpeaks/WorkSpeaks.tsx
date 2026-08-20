@@ -114,9 +114,9 @@ export function WorkSpeaks() {
             className={styles.glowBorder}
           >
             <div className={styles.trustCardInner}>
-              <p className={styles.trustCardEyebrow}>
+              <h2 className={styles.trustCardTitle}>
                 Why Clients Trust <SpinTwo />
-              </p>
+              </h2>
 
               <ul className={styles.trustList}>
                 {TRUST_ITEMS.map((item, i) => (
