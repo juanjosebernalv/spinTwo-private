@@ -1,0 +1,104 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animations ────────────────────────────── */
+.revealY {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.revealY.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay1 { transition-delay: 100ms; }
+.delay2 { transition-delay: 200ms; }
+.delay3 { transition-delay: 300ms; }
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply bg-white px-6 py-20;
+}
+.container {
+  @apply mx-auto max-w-6xl;
+}
+
+/* ── Header ───────────────────────────────────────── */
+.header {
+  @apply max-w-xl;
+}
+.eyebrow {
+  @apply mb-3 text-xs font-bold uppercase tracking-widest text-brand-red;
+}
+.title {
+  @apply text-3xl font-bold text-gray-900 sm:text-4xl;
+}
+
+/* ── Two-paragraph row ────────────────────────────── */
+.parasRow {
+  @apply mt-8 grid gap-6 sm:grid-cols-2;
+}
+.para {
+  @apply border-l-4 border-brand-red pl-5 font-logo text-sm leading-relaxed text-gray-600;
+}
+
+/* ── Cards grid ───────────────────────────────────── */
+.cardsGrid {
+  @apply mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+/* ── Glow card wrapper ────────────────────────────── */
+.glowBorder {
+  @apply h-full rounded-2xl p-px transition-shadow duration-300;
+  background: radial-gradient(220px at var(--x, 50%) var(--y, 50%), rgba(198, 26, 39, 0.3), #e5e7eb 55%);
+}
+.glowBorder:hover {
+  @apply shadow-[0_0_28px_rgba(198,26,39,0.12)];
+}
+.cardInner {
+  @apply flex h-full flex-col items-center rounded-2xl bg-white px-6 pb-8 pt-8 text-center sm:pt-14;
+}
+
+/* ── Stat value ───────────────────────────────────── */
+.statValue {
+  @apply mt-6 text-4xl font-bold text-brand-red sm:text-5xl;
+}
+
+/* ── Stat label ───────────────────────────────────── */
+.statLabel {
+  @apply mt-3 text-xs font-bold uppercase tracking-widest text-gray-900;
+}
+
+/* ── Card "built for tomorrow" label ─────────────── */
+.textLabel {
+  @apply mt-6 text-xs font-bold uppercase tracking-widest text-brand-red;
+}
+
+/* ── Card description ─────────────────────────────── */
+.cardDesc {
+  @apply mt-3 font-logo text-sm leading-relaxed text-gray-500;
+}
+
+/* ── Tagline row ──────────────────────────────────── */
+.taglineRow {
+  @apply mt-14 flex items-center gap-4 overflow-hidden;
+}
+.taglineLineLong {
+  @apply h-px flex-1 bg-brand-red;
+}
+.taglineLineShort {
+  @apply h-px w-10 shrink-0 bg-brand-red;
+}
+.taglineText {
+  @apply shrink-0 text-xs font-bold uppercase tracking-widest text-brand-red;
+}
+
+/* ── SpinTwo inline brand ─────────────────────────── */
+.spinTwoBase {
+  @apply font-sans font-bold text-[1em];
+}
+.spinTwoPrefix {
+  @apply text-brand-dark;
+}
+.spinTwoSuffix {
+  @apply text-brand-red;
+}

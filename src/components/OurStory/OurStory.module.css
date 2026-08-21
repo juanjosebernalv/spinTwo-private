@@ -1,0 +1,96 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animations ────────────────────────────── */
+.revealLeft {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.revealLeft.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.revealCard {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.revealCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay1 { transition-delay: 100ms; }
+.delay2 { transition-delay: 220ms; }
+
+/* ── Section layout ───────────────────────────────── */
+.section {
+  @apply overflow-hidden bg-brand-light px-6 py-20;
+}
+.container {
+  @apply mx-auto max-w-6xl;
+}
+.grid {
+  @apply grid items-start gap-8 lg:grid-cols-2 lg:gap-12;
+}
+
+/* ── Left column ──────────────────────────────────── */
+.left {
+  @apply flex flex-col gap-5;
+}
+.eyebrow {
+  @apply text-xs font-bold uppercase tracking-widest text-brand-red;
+}
+.title {
+  @apply text-3xl font-bold leading-tight text-gray-900 sm:text-4xl;
+}
+.body {
+  @apply font-logo text-sm leading-relaxed text-gray-600;
+}
+
+/* ── Right column ─────────────────────────────────── */
+.right {
+  @apply flex flex-col gap-5;
+}
+
+/* ── Glow card wrapper ────────────────────────────── */
+.glowBorder {
+  @apply rounded-2xl p-px transition-shadow duration-300;
+  background: radial-gradient(260px at var(--x, 50%) var(--y, 50%), rgba(198, 26, 39, 0.35), #d1d5db 55%);
+}
+.glowBorder:hover {
+  @apply shadow-[0_0_28px_rgba(198,26,39,0.12)];
+}
+.cardInner {
+  @apply flex gap-4 rounded-2xl bg-brand-light p-6;
+}
+
+/* ── Check icon ───────────────────────────────────── */
+.checkWrap {
+  @apply mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full;
+  background-color: #E5F6FC;
+}
+.checkIcon {
+  color: #00A4E5;
+}
+
+/* ── Card text ────────────────────────────────────── */
+.cardContent {
+  @apply flex flex-col gap-2;
+}
+.cardTitle {
+  @apply font-bold text-gray-900;
+}
+.cardBody {
+  @apply font-logo text-sm leading-relaxed text-gray-500;
+}
+
+/* ── SpinTwo inline brand ─────────────────────────── */
+.spinTwoBase {
+  @apply font-sans font-bold text-[0.85em];
+}
+.spinTwoPrefix {
+  @apply text-brand-dark;
+}
+.spinTwoSuffix {
+  @apply text-brand-red;
+}

@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,21 +8,13 @@ interface HeroCta {
 }
 
 export interface HeroProps {
-  title: string;
-  subtitle: string;
+  title: ReactNode;
+  subtitle: ReactNode;
   primaryCta?: HeroCta;
   secondaryCta?: HeroCta;
-  /**
-   * Path to the background image (relative to /public).
-   * When provided the hero renders in full-screen mode with a dark overlay.
-   */
   backgroundImage?: string;
-  /**
-   * Path to a background video (relative to /public).
-   * Takes precedence over backgroundImage when both are supplied.
-   */
   backgroundVideo?: string;
-  eyebrow?: string;
+  eyebrow?: ReactNode;
 }
 
 export function Hero({
@@ -48,11 +41,11 @@ export function Hero({
 /* Full-screen hero with background video + dark overlay               */
 /* ------------------------------------------------------------------ */
 
-type ContentProps = Pick<HeroProps, "primaryCta" | "secondaryCta"> & { title: string; subtitle: string };
+type ContentProps = Pick<HeroProps, "primaryCta" | "secondaryCta"> & { title: ReactNode; subtitle: ReactNode };
 
 function HeroContent({ title, subtitle, primaryCta, secondaryCta }: ContentProps) {
   return (
-    <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-24">
+    <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-14 sm:py-24">
       <div className="w-full sm:max-w-[52%]">
         <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
           {title}
@@ -114,7 +107,7 @@ function VideoHero({ title, subtitle, primaryCta, secondaryCta, backgroundVideo 
 
 function ImageHero({ title, subtitle, primaryCta, secondaryCta, backgroundImage }: ContentProps & { backgroundImage: string }) {
   return (
-    <section className="relative flex items-center overflow-hidden sm:min-h-[90vh]">
+    <section className="relative flex items-center overflow-hidden sm:min-h-[65vh]">
       {/* Background image */}
       <Image
         src={backgroundImage}
