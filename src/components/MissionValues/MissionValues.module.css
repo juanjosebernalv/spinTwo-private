@@ -1,0 +1,98 @@
+@reference "../../app/globals.css";
+
+/* ── Reveal animations ────────────────────────────── */
+.revealY {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.revealY.visible { opacity: 1; transform: translateY(0); }
+
+.revealLeft {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.revealLeft.visible { opacity: 1; transform: translateX(0); }
+
+.revealRight {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.revealRight.visible { opacity: 1; transform: translateX(0); }
+
+.delay1 { transition-delay: 80ms; }
+.delay2 { transition-delay: 160ms; }
+.delay3 { transition-delay: 240ms; }
+
+/* ── Section ──────────────────────────────────────── */
+.section {
+  @apply overflow-hidden bg-brand-light px-6 py-20;
+}
+.container {
+  @apply mx-auto flex max-w-6xl flex-col gap-10;
+}
+
+/* ── Header ───────────────────────────────────────── */
+.header {
+  @apply text-center;
+}
+.eyebrow {
+  @apply text-xs font-bold uppercase tracking-widest text-brand-red;
+}
+.title {
+  @apply mt-2 text-4xl font-bold text-gray-900 sm:text-5xl;
+}
+.subtitle {
+  @apply mt-3 font-logo text-sm text-gray-500;
+}
+
+/* ── Mission + Vision grid ────────────────────────── */
+.mvGrid {
+  @apply grid gap-5 sm:grid-cols-2;
+}
+.missionCard {
+  @apply rounded-2xl bg-brand-red p-8;
+}
+.visionCard {
+  @apply rounded-2xl bg-brand-dark p-8;
+}
+.mvTitle {
+  @apply text-xl font-bold text-white;
+}
+.mvBody {
+  @apply mt-3 font-logo text-sm leading-relaxed text-white/80;
+}
+
+/* ── Values grid ──────────────────────────────────── */
+.valuesGrid {
+  @apply grid gap-5 sm:grid-cols-2 lg:grid-cols-4;
+}
+
+/* ── Glow border ──────────────────────────────────── */
+.glowBorder {
+  @apply h-full rounded-2xl p-px transition-shadow duration-300;
+  background: radial-gradient(260px at var(--x, 50%) var(--y, 50%), rgba(198, 26, 39, 0.28), #e5e7eb 55%);
+}
+.glowBorder:hover {
+  @apply shadow-[0_0_28px_rgba(198,26,39,0.10)];
+}
+
+/* ── Value card ───────────────────────────────────── */
+.valueCard {
+  @apply flex h-full flex-col gap-4 rounded-2xl bg-white p-6;
+}
+.iconWrap {
+  @apply flex h-11 w-11 items-center justify-center rounded-lg;
+  background-color: #FDEAEA;
+}
+.icon {
+  color: #C61A27;
+}
+.valueTitle {
+  @apply text-base font-bold text-gray-900;
+}
+.valueBody {
+  @apply font-logo text-sm leading-relaxed text-gray-500;
+}

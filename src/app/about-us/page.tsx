@@ -2,8 +2,26 @@
 
 import { CTA } from "@/components/CTA/CTA";
 import { Hero } from "@/components/Hero/Hero";
-import { ItemGrid } from "@/components/ItemGrid/ItemGrid";
+import { FounderProfiles } from "@/components/FounderProfiles/FounderProfiles";
+import { ImageCtaBanner } from "@/components/ImageCtaBanner/ImageCtaBanner";
+import { MissionValues } from "@/components/MissionValues/MissionValues";
+import { WhySpinTwo } from "@/components/WhySpinTwo/WhySpinTwo";
+import { NameOrigin } from "@/components/NameOrigin/NameOrigin";
+import { OurStory } from "@/components/OurStory/OurStory";
+import { StatsBar } from "@/components/StatsBar/StatsBar";
+import { TheTeam } from "@/components/TheTeam/TheTeam";
 import { useTranslation } from "@/hooks/useTranslation";
+import { imgSrc } from "@/lib/imgSrc";
+import { HomeCtaBanner } from '@/components/HomeCtaBanner/HomeCtaBanner';
+
+function SpinTwo({ dark }: { dark?: boolean }) {
+  return (
+    <span className="font-sans font-bold text-[0.85em]">
+      <span className={dark ? "text-white" : "text-brand-dark"}>spin</span>
+      <span className="text-brand-red">Two</span>
+    </span>
+  );
+}
 
 export default function AboutUsPage() {
   const { t } = useTranslation();
@@ -12,23 +30,45 @@ export default function AboutUsPage() {
   return (
     <>
       <Hero
-        eyebrow={page.hero.eyebrow}
-        title={page.hero.title}
-        subtitle={page.hero.subtitle}
-        primaryCta={{ label: page.hero.ctaPrimary, href: "/contact-us" }}
-        secondaryCta={{ label: page.hero.ctaSecondary, href: "/services" }}
+        eyebrow={<>ABOUT <SpinTwo dark /></>}
+        title={
+          <>
+            We understand the challenge,{" "}
+            <span className="text-brand-red">not just the hardware</span>
+          </>
+        }
+        subtitle={
+          <>
+            <SpinTwo dark /> was founded by researchers who spent careers inside the
+            world&apos;s most demanding computing environments, from CERN&apos;s
+            particle physics grid to NIH genomics infrastructure. We didn&apos;t learn
+            HPC from a vendor catalog. We learned it by needing it.
+          </>
+        }
+        primaryCta={{ label: "Work With Us", href: "/contact-us" }}
+        secondaryCta={{ label: "See Our Case Studies", href: "/case-studies" }}
+        backgroundImage={imgSrc("/images/about-bg.png")}
       />
-      <section className="mx-auto max-w-5xl px-6 py-16">
-        <h2 className="text-2xl font-semibold">{page.mission.title}</h2>
-        <p className="mt-4 max-w-3xl text-current/70">{page.mission.body}</p>
-      </section>
-      <ItemGrid title={page.values.title} items={page.values.items} />
-      <CTA
+      <NameOrigin />
+      <StatsBar />
+      <OurStory />
+      <ImageCtaBanner
+        backgroundImage={imgSrc("/images/about-bg-2.jpg")}
+        title="We know the problem because we lived it"
+        primaryCta={{ label: "Work With Us", href: "/contact-us" }}
+        secondaryCta={{ label: "See Our Case Studies", href: "/case-studies" }}
+      />
+      <TheTeam />
+      <FounderProfiles />
+      <MissionValues />
+      <WhySpinTwo />
+      {/* <CTA
         title={page.cta.title}
         subtitle={page.cta.subtitle}
         buttonLabel={page.cta.buttonLabel}
         href="/contact-us"
-      />
+      /> */}
+      <HomeCtaBanner />
     </>
   );
 }
